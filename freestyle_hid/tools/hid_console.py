@@ -60,6 +60,8 @@ def main(
     device_path: Optional[pathlib.Path],
     encoding: str,
 ):
+    # MOFIX
+    product_id = 14416
     if not product_id and not device_path:
         raise click.UsageError(
             "One of --product-id or DEVICE_PATH need to be provided."
